@@ -67,3 +67,14 @@ xn--eqrt2g.xn--6frz82g
 -- expect --
 域名.移动
 
+-- test --
+[%- USE Filter.IDN -%]
+[% '域名.移动' | idn('encode') %]
+-- expect --
+xn--eqrt2g.xn--6frz82g
+
+-- test --
+[%- USE Filter.IDN -%]
+[% 'xn--eqrt2g.xn--6frz82g' | idn('decode') %]
+-- expect --
+域名.移动
