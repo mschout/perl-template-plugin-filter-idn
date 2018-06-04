@@ -26,6 +26,12 @@ sub filter {
 
     my ($type) = @$args;
 
+    # if no "type" was given, try to guess what we should do.  If we have
+    # non-ascii chars, assume that we want to_ascii
+    unless (defined $type) {
+        $type = ($text =~ /[^ -~\s]/) ? 'to_ascii' : 'to_utf8';
+    }
+
     if ($type eq any(qw(encode to_ascii))) {
         return Net::IDN::Encode::domain_to_ascii($text);
     }

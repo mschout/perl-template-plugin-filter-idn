@@ -78,3 +78,14 @@ xn--eqrt2g.xn--6frz82g
 [% 'xn--eqrt2g.xn--6frz82g' | idn('decode') %]
 -- expect --
 域名.移动
+
+-- test --
+[%- USE Filter.IDN -%]
+[% 'xn--eqrt2g.xn--6frz82g' | idn %]
+-- expect --
+域名.移动
+-- test --
+[%- USE Filter.IDN -%]
+[% '域名.移动' | idn %]
+-- expect --
+xn--eqrt2g.xn--6frz82g
