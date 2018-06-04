@@ -1,3 +1,5 @@
+# COPYRIGHT
+
 package Template::Plugin::Filter::IDN;
 
 # ABSTRACT: Template Toolkit plugin for encoding and decoding International Domain Names.
