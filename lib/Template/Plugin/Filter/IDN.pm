@@ -8,7 +8,7 @@
 #
 
 package Template::Plugin::Filter::IDN;
-$Template::Plugin::Filter::IDN::VERSION = '0.02';
+$Template::Plugin::Filter::IDN::VERSION = '0.03';
 # ABSTRACT: Template Toolkit plugin for encoding and decoding International Domain Names.
 
 use strict;
@@ -66,7 +66,7 @@ Template::Plugin::Filter::IDN - Template Toolkit plugin for encoding and decodin
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

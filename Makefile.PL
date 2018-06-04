@@ -19,6 +19,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Carp" => 0,
     "Net::IDN::Encode" => 0,
+    "Syntax::Feature::Junction" => 0,
     "Template::Plugin::Filter" => 0,
     "parent" => 0,
     "strict" => 0,
@@ -30,7 +31,7 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "utf8" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -40,6 +41,7 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "Carp" => 0,
   "Net::IDN::Encode" => 0,
+  "Syntax::Feature::Junction" => 0,
   "Template::Plugin::Filter" => 0,
   "Template::Test" => 0,
   "Test::More" => 0,

@@ -23,6 +23,7 @@
       "develop" : {
          "requires" : {
             "Dist::Zilla" : "5",
+            "Dist::Zilla::Plugin::Prereqs" : "0",
             "Dist::Zilla::PluginBundle::MSCHOUT" : "0",
             "Pod::Coverage::TrustPod" : "0",
             "Software::License::Perl_5" : "0",
@@ -35,6 +36,7 @@
          "requires" : {
             "Carp" : "0",
             "Net::IDN::Encode" : "0",
+            "Syntax::Feature::Junction" : "0",
             "Template::Plugin::Filter" : "0",
             "parent" : "0",
             "perl" : "5.008",
@@ -55,7 +57,7 @@
    "provides" : {
       "Template::Plugin::Filter::IDN" : {
          "file" : "lib/Template/Plugin/Filter/IDN.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -70,7 +72,7 @@
          "web" : "https://github.com/mschout/perl-template-plugin-filter-idn"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0233"
 }
 
