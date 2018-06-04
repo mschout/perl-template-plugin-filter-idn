@@ -1,6 +1,8 @@
 Revision history for Template-Plugin-Filter-IDN
 
 {{$NEXT}}
+
+0.02  2018-06-04
     - Add Copyright notice to module source.
 
 0.01  2018-06-04
