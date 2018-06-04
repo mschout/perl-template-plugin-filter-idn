@@ -1,5 +1,14 @@
+#
+# This file is part of Template-Plugin-Filter-IDN
+#
+# This software is copyright (c) 2018 by Michael Schout.
+#
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+#
+
 package Template::Plugin::Filter::IDN;
-$Template::Plugin::Filter::IDN::VERSION = '0.01';
+$Template::Plugin::Filter::IDN::VERSION = '0.02';
 # ABSTRACT: Template Toolkit plugin for encoding and decoding International Domain Names.
 
 use strict;
@@ -57,7 +66,7 @@ Template::Plugin::Filter::IDN - Template Toolkit plugin for encoding and decodin
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

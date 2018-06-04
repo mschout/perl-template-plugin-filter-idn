@@ -20,7 +20,7 @@ name: Template-Plugin-Filter-IDN
 provides:
   Template::Plugin::Filter::IDN:
     file: lib/Template/Plugin/Filter/IDN.pm
-    version: '0.01'
+    version: '0.02'
 requires:
   Carp: '0'
   Net::IDN::Encode: '0'
@@ -34,5 +34,5 @@ resources:
   bugtracker: https://github.com/mschout/perl-template-plugin-filter-idn/issues
   homepage: https://github.com/mschout/perl-template-plugin-filter-idn
   repository: https://github.com/mschout/perl-template-plugin-filter-idn.git
-version: '0.01'
+version: '0.02'
 x_serialization_backend: 'YAML::Tiny version 1.70'
