@@ -1,6 +1,7 @@
 Revision history for Template-Plugin-Filter-IDN
 
 {{$NEXT}}
+    - Let Dist::Zilla generate the compile test
 
 0.03  2018-06-04
     - Declare dependency on Syntax::Feature::Junction [github #1]
