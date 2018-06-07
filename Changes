@@ -1,6 +1,8 @@
 Revision history for Template-Plugin-Filter-IDN
 
 {{$NEXT}}
+
+0.04  2018-06-07
     - Let Dist::Zilla generate the compile test
     - Replace Syntax::Keyword::Junction::any with List::Util::any
 
