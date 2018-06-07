@@ -6,7 +6,7 @@ package Template::Plugin::Filter::IDN;
 
 use strict;
 use warnings;
-use syntax 'junction';
+use List::Util 'any';
 
 use parent 'Template::Plugin::Filter';
 
@@ -34,10 +34,10 @@ sub filter {
         $type = ($text =~ /[^ -~\s]/) ? 'to_ascii' : 'to_utf8';
     }
 
-    if ($type eq any(qw(encode to_ascii))) {
+    if (any { $_ eq $type } qw(encode to_ascii)) {
         return Net::IDN::Encode::domain_to_ascii($text);
     }
-    elsif ($type eq any(qw(decode to_utf8))) {
+    elsif (any { $_ eq $type } qw(decode to_utf8)) {
         return Net::IDN::Encode::domain_to_unicode($text);
     }
     else {
